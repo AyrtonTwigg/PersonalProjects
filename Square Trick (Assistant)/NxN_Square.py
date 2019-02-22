@@ -2,7 +2,7 @@
 # Each coordinate can be empty or occupied, based on the spectator's choice.
 # The spectator then selects a "secret" square which the program/assistant will have to find.
 # I then change 1 square only (flip it from empty to occupied, or occupied to empty).
-# Finally, I input the grid starting from top to bottom, and right to left. (0 = empty, 1=occupied).
+# Finally, I input the grid starting from top to bottom, and right to left. (0=empty, 1=occupied).
 # The program will determine the chosen secret square based on specific rules planned by me.
 
 import math
