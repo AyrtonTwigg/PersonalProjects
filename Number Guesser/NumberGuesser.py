@@ -1,6 +1,6 @@
-#This program asks the user to think of a number between 1 and n. Then asks for a number of groups.
-#The program then prints out groups of numbers and asks in which group the correct number is.
-#When enough inputs have been given to deduce the correct number, the program will print it.
+# This program asks the user to think of a number between 1 and n. Then asks for a number of groups.
+# The program then prints out groups of numbers and asks in which group the correct number is.
+# When enough inputs have been given to deduce the correct number, the program will print it.
 
 import random
 import math
