@@ -1,4 +1,5 @@
 # This program will assist in performing the exact trick explained here: https://www.youtube.com/watch?v=4UDlmyMyq7Q
+# Input the cards in this way: 5H 10D AS QC
 
 def FindNumber(cards):
     number = ReadValue(cards[0][:-1])
