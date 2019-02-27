@@ -18,9 +18,9 @@ def ReadBoard(board, board_length):
                         if board[row+jump*int((board_length/2**x))][col]:
                             check_even += 1
             if check_even %2 == 0:
-                list_binary.append("1")
+                list_binary.append(int("1"))
             else:
-                list_binary.append("0")
+                list_binary.append(int("0"))
         if twice == 0:
             board = [[board[j][i] for j in range(len(board))] for i in range(len(board[0]))]
     return list_binary
@@ -31,12 +31,12 @@ def Decode(list_binary):
     
     pow_x = pow_y = int(math.log2(board_length))-1
     
-    for i in range(int(len(list_binary))):
-        if int(list_binary[i]):
+    for i in range(len(list_binary)):
+        if list_binary[i]:
             y_coordinate += 2**pow_y
         pow_y -= 1
     for i in range(int(len(list_binary)/2), len(list_binary)):
-        if not int(list_binary[i]):
+        if not list_binary[i]:
             x_coordinate += 2**pow_x
         pow_x -= 1
     
