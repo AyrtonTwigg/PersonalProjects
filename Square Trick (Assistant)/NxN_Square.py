@@ -18,9 +18,9 @@ def ReadBoard(board, board_length):
                         if board[row+jump*int((board_length/2**x))][col]:
                             check_even += 1
             if check_even %2 == 0:
-                list_binary.append(int("1"))
+                list_binary.append(1)
             else:
-                list_binary.append(int("0"))
+                list_binary.append(0)
         if twice == 0:
             board = [[board[j][i] for j in range(len(board))] for i in range(len(board[0]))]
     return list_binary
