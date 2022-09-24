@@ -1,6 +1,6 @@
 import random
 
-material_num = int(input("How many material points?\n"))
+material_num = int(input("How many material points? (1-39)\n"))
 
 material_values =     [9,5,3,1]
 max_material_values = [1,2,4,8]
@@ -27,6 +27,7 @@ for solution in temp:
         count = solution.count(material_values[i])
         if count > max_material_values[i]:
             material_solutions.remove(solution)
+            break
 
 random_solution = random.choice(material_solutions)
 
